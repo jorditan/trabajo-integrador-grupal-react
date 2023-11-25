@@ -138,8 +138,9 @@ h2 {
 }
 .navBar .navBarOne .atb span {
   color: var(--negro);
-  font-size: 13px;
+  font-size: 15px;
   cursor: pointer;
+  gap: 0.5rem;
 }
 .navBar .navBarOne .atb span:hover {
   color: var(--colorPrimario);
@@ -163,6 +164,7 @@ h2 {
 }
 @media screen and (max-width: 769px) {
   .navBar .navBarTwo .navBarMenu {
+    flex-direction: column;
     position: absolute;
     background-color: var(--colorSegundario);
     padding: 1.5rem;
@@ -202,4 +204,58 @@ h2 {
 .navBar .navBarTwo .mostrarNavBar {
   right: 50%;
   transition: 0.4s ease-in;
+}
+
+@media screen and (min-width: 770px) {
+  /* BREAKPOINTS DE LA NAVBAR*/
+  .navBar .btnOne, .navBar .toggleIcon {
+    display: none;
+  }
+  .navBar .navBarOne .atb span {
+    gap: 1rem;
+  }
+  .navBar .navBarOne .none {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .navBar .navBarOne li {
+    font-size: 1.3em;
+    gap: 1.5rem;
+    color: var(--textColor);
+  }
+  .navBar .navBarOne li:hover {
+    color: var(--colorPrimario);
+  }
+  .navBar .navBarOne .atb span {
+    font-size: 1.3em;
+  }
+  .navBar .navBarTwo {
+    justify-content: space-between;
+  }
+  .navBar .navBarTwo .logoDiv {
+    width: 20%;
+  }
+  .navBar .navBarTwo .navBarMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+    top: 0;
+    right: 0;
+    width: 60%;
+    position: static;
+  }
+  .navBar .navBarTwo .navBarMenu .menu {
+    flex-direction: row;
+  }
+  .navBar .navBarTwo .navBarMenu .menu .listItem {
+    padding: 0 0.5rem;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: var(--textColor);
+  }
+  .navBar .navBarTwo .navBarMenu .menu .listItem:hover {
+    color: var(--colorPrimario);
+    font-weight: 700;
+  }
 }/*# sourceMappingURL=index.css.map */

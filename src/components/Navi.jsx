@@ -5,6 +5,8 @@ import {SiConsul} from "react-icons/si"
 import {BsPhoneVibrate} from "react-icons/bs"
 import {AiOutlineGlobal} from "react-icons/ai"
 import {CgMenuGridO} from "react-icons/cg"
+import { FaSignInAlt } from "react-icons/fa";
+import { MdCancel } from "react-icons/md";
 
 
 
@@ -30,15 +32,18 @@ function Navi() {
                               <SiConsul className="icon"/>
                          </div>
 
-                         <div className="none flex">
+                         <div className="none flex extras">
                               <li className="flex"> <BsPhoneVibrate className="icon"/> Ayuda</li>
                               <li className="flex"> <AiOutlineGlobal className="icon"/> Lenguajes</li>
                          </div>
 
                               
                          <div className="atb flex">
-                              <span>Inicia sesión</span>
-                              <span>Salir</span>
+                              <span className="flex"> <FaSignInAlt />
+                              Inicia sesión</span>
+     
+                              <span className='flex'><MdCancel />
+                              Salir</span>
                          </div>
                     </div>
                     <div className="navBarTwo flex">
